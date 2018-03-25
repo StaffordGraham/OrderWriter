@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA5ABE53-8815-410A-BCB5-5639D76ACD91}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>OrderWriter.My.MyApplication</StartupObject>
+    <RootNamespace>OrderWriter</RootNamespace>
+    <AssemblyName>OrderWriter</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>OrderWriter.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>OrderWriter.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActuaryForm.Designer.vb">
+      <DependentUpon>ActuaryForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActuaryForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActuaryForm2.Designer.vb">
+      <DependentUpon>ActuaryForm2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActuaryForm2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActuaryForm3.Designer.vb">
+      <DependentUpon>ActuaryForm3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActuaryForm3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddressForm.Designer.vb">
+      <DependentUpon>AddressForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddressForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicParaClass.vb" />
+    <Compile Include="ComplianceDateForm.Designer.vb">
+      <DependentUpon>ComplianceDateForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ComplianceDateForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConductStatementClass.vb" />
+    <Compile Include="ConductStatementForm.Designer.vb">
+      <DependentUpon>ConductStatementForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConductStatementForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsolidateClass.vb" />
+    <Compile Include="ConsolidateForm.Designer.vb">
+      <DependentUpon>ConsolidateForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsolidateForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateForm.Designer.vb">
+      <DependentUpon>DateForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DateForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpertClass.vb" />
+    <Compile Include="ExpertExchangeClass.vb" />
+    <Compile Include="ExpertForm.Designer.vb">
+      <DependentUpon>ExpertForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExpertForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpertForm1a.Designer.vb">
+      <DependentUpon>ExpertForm1a.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExpertForm1a.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpertForm2.Designer.vb">
+      <DependentUpon>ExpertForm2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExpertForm2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpertNameFrm.Designer.vb">
+      <DependentUpon>ExpertNameFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExpertNameFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpExchForm.Designer.vb">
+      <DependentUpon>ExpExchForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExpExchForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstAppointmentDocs.vb" />
+    <Compile Include="Form1Module.vb" />
+    <Compile Include="FormEClass.vb" />
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="CaseDetails.Designer.vb">
+      <DependentUpon>CaseDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CaseDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Child.vb" />
+    <Compile Include="CourtDetails.vb" />
+    <Compile Include="DetailsCase.vb" />
+    <Compile Include="FinalParaClass.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDateChooser.Designer.vb">
+      <DependentUpon>frmDateChooser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDateChooser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDateChooser2.Designer.vb">
+      <DependentUpon>frmDateChooser2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDateChooser2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFirstAppointment.Designer.vb">
+      <DependentUpon>frmFirstAppointment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFirstAppointment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLegalServices.Designer.vb">
+      <DependentUpon>frmLegalServices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLegalServices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLSOPrelim.Designer.vb">
+      <DependentUpon>frmLSOPrelim.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLSOPrelim.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMiamFormE.Designer.vb">
+      <DependentUpon>frmMiamFormE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMiamFormE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMPS.Designer.vb">
+      <DependentUpon>frmMPS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMPS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderSelector.Designer.vb">
+      <DependentUpon>frmOrderSelector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderSelector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPension.Designer.vb">
+      <DependentUpon>frmPension.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPension.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPreDateChooser.Designer.vb">
+      <DependentUpon>frmPreDateChooser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPreDateChooser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSchedDef.Designer.vb">
+      <DependentUpon>frmSchedDef.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSchedDef.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalObject.vb" />
+    <Compile Include="GlobalVariables.vb" />
+    <Compile Include="Hearing.vb" />
+    <Compile Include="InitStepsClass.vb" />
+    <Compile Include="Judge.vb" />
+    <Compile Include="LSOClass.vb" />
+    <Compile Include="MiamOrderClass.vb" />
+    <Compile Include="Module1.vb" />
+    <Compile Include="MortCapClass.vb" />
+    <Compile Include="MortCapForm.Designer.vb">
+      <DependentUpon>MortCapForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MortCapForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPSClass.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OrderListClass.vb" />
+    <Compile Include="OtherEvidenceClass.vb" />
+    <Compile Include="OtherEvidenceForm.Designer.vb">
+      <DependentUpon>OtherEvidenceForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OtherEvidenceForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Party.vb" />
+    <Compile Include="PenClass.vb" />
+    <Compile Include="PropertyClass.vb" />
+    <Compile Include="ReplyQuaire.Designer.vb">
+      <DependentUpon>ReplyQuaire.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReplyQuaire.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReplyQuaireClass.vb" />
+    <Compile Include="RepSchedDefClass.vb" />
+    <Compile Include="RepSchedDefForm.Designer.vb">
+      <DependentUpon>RepSchedDefForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RepSchedDefForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedDefClass.vb" />
+    <Compile Include="StatementClass.vb" />
+    <Compile Include="StatementForm.Designer.vb">
+      <DependentUpon>StatementForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StatementForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateClass.vb" />
+    <Compile Include="UpdateForm.Designer.vb">
+      <DependentUpon>UpdateForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VarySettlementClass.vb" />
+    <Compile Include="VarySettlementForm.Designer.vb">
+      <DependentUpon>VarySettlementForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VarySettlementForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WriteTheOrder.Designer.vb">
+      <DependentUpon>WriteTheOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WriteTheOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ActuaryForm.resx">
+      <DependentUpon>ActuaryForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActuaryForm2.resx">
+      <DependentUpon>ActuaryForm2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActuaryForm3.resx">
+      <DependentUpon>ActuaryForm3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddressForm.resx">
+      <DependentUpon>AddressForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaseDetails.resx">
+      <DependentUpon>CaseDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComplianceDateForm.resx">
+      <DependentUpon>ComplianceDateForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConductStatementForm.resx">
+      <DependentUpon>ConductStatementForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsolidateForm.resx">
+      <DependentUpon>ConsolidateForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateForm.resx">
+      <DependentUpon>DateForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpertForm.resx">
+      <DependentUpon>ExpertForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpertForm1a.resx">
+      <DependentUpon>ExpertForm1a.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpertForm2.resx">
+      <DependentUpon>ExpertForm2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpertNameFrm.resx">
+      <DependentUpon>ExpertNameFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpExchForm.resx">
+      <DependentUpon>ExpExchForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDateChooser.resx">
+      <DependentUpon>frmDateChooser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDateChooser2.resx">
+      <DependentUpon>frmDateChooser2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFirstAppointment.resx">
+      <DependentUpon>frmFirstAppointment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLegalServices.resx">
+      <DependentUpon>frmLegalServices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLSOPrelim.resx">
+      <DependentUpon>frmLSOPrelim.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMiamFormE.resx">
+      <DependentUpon>frmMiamFormE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMPS.resx">
+      <DependentUpon>frmMPS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderSelector.resx">
+      <DependentUpon>frmOrderSelector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPension.resx">
+      <DependentUpon>frmPension.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPreDateChooser.resx">
+      <DependentUpon>frmPreDateChooser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSchedDef.resx">
+      <DependentUpon>frmSchedDef.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MortCapForm.resx">
+      <DependentUpon>MortCapForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherEvidenceForm.resx">
+      <DependentUpon>OtherEvidenceForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReplyQuaire.resx">
+      <DependentUpon>ReplyQuaire.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepSchedDefForm.resx">
+      <DependentUpon>RepSchedDefForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatementForm.resx">
+      <DependentUpon>StatementForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateForm.resx">
+      <DependentUpon>UpdateForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VarySettlementForm.resx">
+      <DependentUpon>VarySettlementForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WriteTheOrder.resx">
+      <DependentUpon>WriteTheOrder.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
